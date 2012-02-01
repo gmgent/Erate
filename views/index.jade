@@ -1,3 +1,9 @@
-h1= title
-p Welcome to #{title}
-p #{day_rate.timestamp}
+!!! 5
+html
+  head
+    h1=title
+  body
+    p Welcome to #{title}
+    p #{day_rate.timestamp}
+    form(action="/", method='get')
+      | <button type='submit'>run</button>
