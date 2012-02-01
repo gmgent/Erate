@@ -5,5 +5,7 @@ html
   body
     p Welcome to #{title}
     p #{day_rate.timestamp}
+    p runcode #{runcode}
     form(action="/", method='get')
+      input(type="text", name="runcode")
       button(type='submit') run
