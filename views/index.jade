@@ -3,8 +3,7 @@ html
   head
     h1=title
   body
-    p Welcome to #{title}
-    <form action="/" method="get">
+    <form action="/find" method="get" update="result">
     p
       label choose month: 
       <select name="select_month">
@@ -29,3 +28,5 @@ html
     p
       <input type="submit" value="Send">
     </form>
+    
+    #result
